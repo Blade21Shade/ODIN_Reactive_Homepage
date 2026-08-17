@@ -1,0 +1,19 @@
+body {
+    padding: 5px;
+}
+
+.headerContainer {
+    background-color: wheat;
+    padding-bottom: 10px;
+}
+
+.headerPictureContainer {
+    float: left;
+    
+}
+
+.headerContentContainer {
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 10px;
+}
