@@ -89,7 +89,8 @@ h2 {
     transition: transform 0.5s 0.1s;
 }
 
-.projectContainer:hover {
+.projectContainer:hover,
+.projectContainer:focus {
     transform: scale(1.03);
 }
 
