@@ -90,6 +90,12 @@ h2 {
 .projectInformationContainer {
     box-sizing: border-box;
     padding: 10px;
+
+    height: calc(var(--projectsContainerSize) - var(--projectsScreenshotContainerHeight));
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
 }
 
 .projectScreenshotContainer {
@@ -108,6 +114,7 @@ h2 {
 
 .projectDescription {
     font-size: 120%;
+    overflow-y: auto;
 }
 
 /* General */
