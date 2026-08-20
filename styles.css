@@ -135,12 +135,17 @@ h2 {
 }
 
 .iconButton {
-    all: unset;
     cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: #ffff;
+
     justify-self: center;
+    width: 30px;
+    height: 30px;
 }
 
 .icon {
-    width: 30px;
+    width: 100%;
     height: auto;
 }
