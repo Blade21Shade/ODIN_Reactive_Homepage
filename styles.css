@@ -170,6 +170,7 @@ footer {
 
 footer .iconBar {
     justify-content: left;
+    margin-left: 0px;
 }
 
 footer .iconBar img {
