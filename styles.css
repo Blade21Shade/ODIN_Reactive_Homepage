@@ -103,8 +103,8 @@ main {
 
 .projectsContainer {
     display: grid;
-    
-    grid-template-columns: repeat(3, var(--projectsContainerSize));
+
+    grid-template-columns: repeat(auto-fill, var(--projectsContainerSize));
     grid-auto-rows: var(--projectsContainerSize);
 
     justify-content: space-between;
