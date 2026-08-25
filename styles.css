@@ -176,3 +176,66 @@ footer .iconBar {
 footer .iconBar img {
     background-color: lightgreen;
 }
+
+/* Media Queries */
+@media (width <= 450px) { /* Phones/Mobile devices */
+    :root {
+        --projectsContainerSize: 87.5vw; /* 280px is 87.5% of 320px */
+        --leftRightContainerSpacing: 0px;
+    }
+
+    .headerContainer {
+        padding: 0px;
+    }
+
+    .headerPictureContainer {
+        width: 98%;
+        margin: 0px;
+    }
+
+    .headerContentContainer {
+        margin: 0px;
+        box-shadow: 0px 0px;
+    }
+
+    .projectsContainer {
+        grid-template-columns: 100%;
+        grid-auto-rows: calc(var(--projectsContainerSize)*2);
+
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .projectInformationContainer {
+        height: calc(var(--projectsContainerSize)*2 - var(--projectsScreenshotContainerHeight));
+        grid-template-rows: 30% 70%;
+    }
+
+    .projectTitleAndIconBarContainer {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+    }
+
+    .projectTitle,
+    .content,
+    h1 {
+        text-align: center;
+    }
+
+    .iconBar,
+    footer .iconBar {
+        justify-content: center;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+    }
+
+
+    .footerContentContainer h1,
+    .footerContentContainer p {
+        text-align: center;
+    }
+}
