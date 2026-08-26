@@ -178,6 +178,43 @@ footer .iconBar img {
 }
 
 /* Media Queries */
+
+@media (width <= 1024px) and (width > 800px) { /* Laptops */
+    :root {
+        --projectsContainerSize: 380px;
+    }
+    
+    .headerContentContainer {
+        margin-top: 50px;
+    }
+}
+
+@media (width <= 800px) and (width > 450px) { /* Tablets */
+    h1 {
+        text-align: center;
+    }
+
+    .projectsContainer {
+        justify-content: space-evenly;
+    }
+
+    footer {
+        grid-template-columns: 50% 50%;
+    }
+
+    .footerContentContainer {
+        align-content: center;
+    }
+
+    footer .content {
+        text-align: center;
+    }
+
+    footer .iconBar {
+        justify-content: center;
+    }
+}
+
 @media (width <= 450px) { /* Phones/Mobile devices */
     :root {
         --projectsContainerSize: 87.5vw; /* 280px is 87.5% of 320px */
